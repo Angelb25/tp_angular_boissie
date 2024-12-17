@@ -1,0 +1,129 @@
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f9fc;
+    color: #333;
+  }
+  
+  /* Titre principal */
+  h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  /* Message */
+  p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #16a085;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  /* Champ d'entrée */
+  input {
+    width: calc(100% - 120px);
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus {
+    border-color: #3498db;
+  }
+  
+  /* Bouton général */
+  button {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(1);
+  }
+  
+  /* Liste des tâches */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ecf0f1;
+    padding: 1px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  li:hover {
+    background-color: #d5d8dc;
+  }
+  
+  li span {
+    flex: 1;
+    font-size: 1em;
+  }
+  
+  li span.completed {
+    text-decoration: line-through;
+    color: #7f8c8d;
+  }
+  
+  /* Table des tâches */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  thead {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #d5d8dc;
+  }
+  
+  th {
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+  
+  tbody td button {
+    font-size: 0.9em;
+  }
+  
