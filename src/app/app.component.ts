@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { TaskListComponent } from './task-list/task-list.component'; 
-
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TaskListComponent],
+  standalone: true, // Utilisation du mode standalone
+  imports: [RouterOutlet, NgIf], // RouterOutlet pour le routing
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'task-manager';
-}
+export class AppComponent {}

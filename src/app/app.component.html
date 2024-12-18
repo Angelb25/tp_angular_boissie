@@ -7,6 +7,14 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<app-task-list>
 
-</app-task-list>
+<nav>
+    <ul>
+      <li><a routerLink="/">Accueil</a></li>
+      <li><a routerLink="/tasks">Tâches</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Zone où s'affichent les composants en fonction des routes -->
+  <router-outlet></router-outlet>
+  
