@@ -1,0 +1,27 @@
+<div *ngIf="task">
+    <h2>Modifier la tâche</h2>
+    <form (ngSubmit)="saveTask()">
+      <!-- Modifier le nom -->
+      <div>
+        <label for="name">Nom :</label>
+        <input id="name" [(ngModel)]="task?.name" name="name" required />
+      </div>
+  
+      <!-- Modifier l'état -->
+      <div>
+        <label for="completed">État :</label>
+        <select id="completed" [(ngModel)]="task?.completed" name="completed">
+          <option [value]="false">En cours</option>
+          <option [value]="true">Terminée</option>
+        </select>
+      </div>
+  
+      <button type="submit">Sauvegarder</button>
+      <a routerLink="/tasks">Annuler</a>
+    </form>
+  </div>
+  
+  <div *ngIf="!task">
+    <p>Erreur : Tâche introuvable.</p>
+  </div>
+  
